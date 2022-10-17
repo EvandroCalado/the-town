@@ -1,0 +1,50 @@
+#header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/the-town-bg-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.header-top {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-top-logo > h1{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+} 
+
+.header-top-menu{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    right: 50%;
+}
+
+.header-top-menu-linas {
+    height: 5px;
+    width: 35px;
+    background-color: white;
+}
+
+.header-top-listas > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-top-listas > ul > li {
+    text-decoration: none;
+}
+
