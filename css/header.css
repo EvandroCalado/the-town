@@ -6,6 +6,7 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  overflow: hidden;
 }
 
 .header-head {
@@ -33,6 +34,7 @@
 }
 
 .navbar-menu {
+  position: relative;
   display: none;
   height: 30px;
   width: 30px;
@@ -78,7 +80,7 @@
 .header-central h1 {
   color: #fff;
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 500;
   text-shadow: 2px 2px 2px black;
   text-align: center;
   margin-bottom: 20px;
@@ -109,21 +111,71 @@
 }
 
 @media (max-width: 756px) {
+  .header-head {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
   .navbar {
     flex-direction: column;
   }
 
   .navbar-menu {
     display: block;
+    transition: all 300ms linear;
+    z-index: 2;
+  }
+
+  .navbar-menu span {
+    transition: all 300ms linear;
   }
 
   .navbar-list {
+    height: 100vh;
+    width: 150px;
+    background-color: #007bff;
     display: flex;
     flex-direction: column;
     position: absolute;
+    top: 0;
+    right: -150px;
+    transition: all 300ms linear;
+    z-index: 1;
+  }
+
+  .navbar-list.slide {
+    right: 0px;
   }
 
   .navbar-list ul {
     display: block;
+  }
+
+  .navbar-list ul li {
+    margin: 5px 15px;
+  }
+
+  .navbar-list ul li:hover {
+    color: #fff;
+  }
+
+  .navbar-list ul li:nth-child(1) {
+    margin-top: 60px;
+  }
+
+  .navbar-menu span.slide:nth-child(1) {
+    transform: rotate(45deg) translateX(6px) translateY(5px);
+  }
+
+  .navbar-menu span.slide:nth-child(2) {
+    opacity: 0;  
+  }
+
+  .navbar-menu span.slide:nth-child(3) {
+    transform: rotate(-45deg) translateX(6px) translateY(-5px);
+  }
+
+  .header-central h1 {
+    font-size: 40px;
   }
 }
