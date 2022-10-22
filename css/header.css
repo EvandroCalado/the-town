@@ -11,9 +11,12 @@
 
 .header-head {
   height: 70px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  
 }
 
 .header-logo h1 {

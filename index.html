@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/phosphor-icons"></script>
     <!-- === CSS === -->
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variaveis.css">
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -17,17 +18,15 @@
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <!-- <div class="container">
-        <div class="box box-1"></div>
-        <div class="box box-2"></div>
-        <div class="box box-3"></div>
-        <div class="box box-4"></div>
-    </div> -->
+    <!-- === Layout === -->
     <div class="layout">
-      <header class="header">
+      <!-- === Header === -->
+      <header class="header" id="header">
         <div class="header-head">
           <div class="header-logo">
-            <h1>The Town</h1>
+            <a href="#header">
+              <h1>The Town</h1>
+            </a>
           </div>
           <nav class="navbar">
             <div class="navbar-menu">
@@ -46,11 +45,135 @@
         </div>
         <div class="header-central">
           <h1>The Town</h1>
-          <p>Lorem ipsum dolor sit.</p>
+          <p>Lorem ipsum dolor sit</p>
         </div>
-        <a href="#"><i class="ph-arrow-down"></i></a>
+        <a href="#introdution"><i class="ph-arrow-down"></i></a>
       </header>
-      <main class="main"></main>
+      <!-- === Main === -->
+      <main class="main">
+        <!-- === Introdution === -->
+        <section class="introdution" id="introdution">
+          
+            <div class="introdution-container">
+              <div class="introdution-img"></div>
+              <div class="itrodution-text">
+                <h2>Introdution</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur reiciendis neque velit reprehenderit sapiente facilis, iste a incidunt blanditiis voluptatum?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quam sapiente qui itaque similique cupiditate sit excepturi tempora quis inventore?</p>
+                <a href="#introdution">Read More</a>
+              </div>
+            </div>
+
+            <div class="introdution-cards">
+
+              <div class="introdution-card">
+                <i class="ph-bus"></i>
+                <h4>Lorem ipsum dolor sit</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis quidem fuga libero repellat minus? Doloremque corrupti voluptas eos commodi?</p>
+              </div>
+
+              <div class="introdution-card">
+                <i class="ph-bicycle"></i>
+                <h4>Lorem ipsum dolor sit</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis quidem fuga libero repellat minus? Doloremque corrupti voluptas eos commodi?</p>
+              </div>
+
+              <div class="introdution-card">
+                <i class="ph-buildings"></i>
+                <h4>Lorem ipsum dolor sit</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis quidem fuga libero repellat minus? Doloremque corrupti voluptas eos commodi?</p>
+              </div>
+
+              
+            </div>
+            
+
+            
+         
+        </section>
+        <section class="ourwork">
+          
+          <!-- TODO: -->
+          <div class="galley-modal">
+            <div class="img">
+              
+            </div>
+          </div>
+
+          <div class="ourwork-container">
+            <h2>Our Work</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum excepturi tempore alias voluptas quae eius eaque repudiandae consequatur suscipit non?</p>
+          </div>
+          <div class="ourwork-gallery">
+            <div class="gallery-container">
+
+              <div class="gallery-img">
+                <img src="./img/gallery-img-01.jpg" alt="">
+
+                <div class="gallery-img-text">
+                  <p>Dreamy</p>
+                  <p>Honey</p>
+                  <p>Now</p>
+                </div>
+              </div>
+
+              <div class="gallery-img">
+                <img src="./img/gallery-img-02.jpg" alt="">
+
+                <div class="gallery-img-text">
+                  <p>Dreamy</p>
+                  <p>Honey</p>
+                  <p>Now</p>
+                </div>
+              </div>
+
+              <div class="gallery-img">
+                <img src="./img/gallery-img-03.jpg" alt="">
+
+                <div class="gallery-img-text">
+                  <p>Dreamy</p>
+                  <p>Honey</p>
+                  <p>Now</p>
+                </div>
+              </div>
+
+              <div class="gallery-img">
+
+                <img src="./img/gallery-img-04.jpg" alt="">
+
+                <div class="gallery-img-text">
+                  <p>Dreamy</p>
+                  <p>Honey</p>
+                  <p>Now</p>
+                </div>
+              </div>
+
+              <div class="gallery-img">
+                <img src="./img/gallery-img-05.jpg" alt="">
+
+                <div class="gallery-img-text">
+                  <p>Dreamy</p>
+                  <p>Honey</p>
+                  <p>Now</p>
+                </div>
+              </div>
+
+              <div class="gallery-img">
+                <img src="./img/gallery-img-06.jpg" alt="">
+
+                <div class="gallery-img-text">
+                  <p>Dreamy</p>
+                  <p>Honey</p>
+                  <p>Now</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        
+        
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>
