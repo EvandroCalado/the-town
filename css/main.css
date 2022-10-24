@@ -238,7 +238,7 @@
 .galley-modal .img {
   position: relative;
   background-color: #fff;
-  padding: 10px 10px 20px 10px; 
+  padding: 10px 10px 20px 10px;
 }
 
 .galley-modal .ph-arrow-left {
@@ -285,7 +285,7 @@
 }
 
 .activate {
-  visibility: visible; 
+  visibility: visible;
 }
 
 .activate-2 {
@@ -319,10 +319,8 @@
     align-items: center;
   }
 
-  
   .galley-modal .img img {
     width: 350px;
     height: 630px;
   }
-
 }
